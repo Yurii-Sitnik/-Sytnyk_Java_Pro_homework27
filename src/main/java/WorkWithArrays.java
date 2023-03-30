@@ -1,17 +1,6 @@
 import java.util.Arrays;
 
-public class Main {
-    public static void main(String[] args) {
-
-        int[] array1 = {1, 5, 6, 4, 4, 3, 7, 8};
-        int[] array2 = {1, 5, 6};
-        int[] array3 = null;
-
-        System.out.println(Arrays.toString(workArray1(Arrays.stream(array1).toArray())));
-        System.out.println(Arrays.toString(workArray1(Arrays.stream(array2).toArray())));
-        System.out.println(Arrays.toString(workArray1(Arrays.stream(array3).toArray())));
-    }
-
+public class WorkWithArrays {
     public static int[] workArray1(int[] array) {
         if (array == null) {
             return null;
@@ -28,22 +17,31 @@ public class Main {
             }
         }
         try {
-            if (a < 1) throw new RuntimeException ("No number 4 in array");
+            if (a < 1) throw new RuntimeException("No number 4 in array");
         } catch (ArithmeticException ignored) {
 
         }
         return newArray;
     }
-    public static boolean workArray2(int[] arr) {
-        if (arr == null || arr.length == 0) {
-            return false;
+
+    public static boolean workArray2 (int[] array) {
+        int first = 1;
+        int second = 4;
+        boolean containsFirst = false;
+        boolean containsSecond = false;
+        for (int element : array) {
+            if (element == first) {
+                containsFirst = true;
+            } else if (element == second) {
+                containsSecond = true;
+            }
         }
-        for (int i : arr) {
-            if (i != 1 && i != 4) return false;
-        }
-        return true;
+        return containsFirst && containsSecond;
     }
 }
+
+
+
 
 
 
