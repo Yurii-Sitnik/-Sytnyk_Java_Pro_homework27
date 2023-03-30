@@ -50,7 +50,7 @@ public class WorkWithArraysTest {
     }
     @Test()
     void testArray8(){
-        Assertions.assertFalse(WorkWithArrays.workArray2(array6));
+        Assertions.assertFalse(WorkWithArrays.workArray2(array8));
     }
 
 
