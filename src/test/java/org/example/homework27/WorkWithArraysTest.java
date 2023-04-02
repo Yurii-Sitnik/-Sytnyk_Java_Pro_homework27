@@ -1,3 +1,6 @@
+package org.example.homework27;
+
+import org.example.homework27.WorkWithArrays;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

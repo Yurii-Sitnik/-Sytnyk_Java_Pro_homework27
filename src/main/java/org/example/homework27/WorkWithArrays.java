@@ -1,3 +1,5 @@
+package org.example.homework27;
+
 import java.util.Arrays;
 
 public class WorkWithArrays {

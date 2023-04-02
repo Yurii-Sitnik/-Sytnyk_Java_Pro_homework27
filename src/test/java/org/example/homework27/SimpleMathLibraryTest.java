@@ -1,6 +1,8 @@
+package org.example.homework27;
+
+import org.example.homework27.SimpleMathLibrary;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Timeout;
 
 public class SimpleMathLibraryTest {
 
